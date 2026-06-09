@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Ayelen Michcapacchua Huarca - Perfil Profesional</title>
+    <meta name="description" content="Página web oficial y portafolio profesional de Flor Ayelen Michcapacchua Huarca, estudiante de Ciencia de la Computación en la Universidad Católica San Pablo.">
+    <meta name="keywords" content="Flor Ayelen Michcapacchua Huarca, Flor Ayelen, Michcapacchua Huarca, Ciencia de la Computación, UCSP, San Pablo, Portafolio">
+    <meta name="author" content="Flor Ayelen Michcapacchua Huarca">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-attachment: fixed;
+            background-color: #fffb7d;
+            background-image: linear-gradient(180deg, #fffb7d 0%, #ffffff 50%, #7daeff 100%);
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+            background-size: 6px 6px; 
+            pointer-events: none; 
+            z-index: -1; 
+        }
+
+        .logo-universidad-esquina {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 70px; 
+            z-index: 10;
+        }
+
+        .contenedor-principal {
+            max-width: 720px;
+            margin: 50px auto 0 auto;
+        }
+
+        .menu-navegacion {
+            background: linear-gradient(180deg, #baff99 0%, #76ec3b 100%);
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: 3px solid #000000;
+            text-align: center;
+            box-shadow: 6px 6px 0px #000000;
+            margin-bottom: 40px;
+        }
+
+        .menu-navegacion a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 6px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            transition: all 0.2s;
+            display: inline-block; 
+        }
+
+        .menu-navegacion a:hover {
+            background-color: #ffffff; 
+            color: #000000;
+            border: 2px solid #000000;
+            padding: 2px 10px;
+        }
+
+        .bloque-titulo-principal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px; 
+            margin-bottom: 45px;
+        }
+
+        h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 600;
+            font-size: 2.5rem; 
+            text-align: center;
+            margin: 0;
+            color: #1840B8;
+            text-shadow: 3px 3px 0px #C7D8FF;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            gap: 5px;
+        }
+
+        h1 span {
+            display: block;
+        }
+
+        
+        .tokki-titulo {
+            width: 110px; 
+            height: auto;
+            opacity: 0.9;
+            filter: drop-shadow(3px 3px 0px #000000); 
+        }
+        
+        .tarjeta-seccion {
+            background: linear-gradient(180deg, #ffffff 0%, #dbeeff 100%); 
+            border: 3px solid #000000; 
+            border-radius: 24px; 
+            padding: 28px;
+            margin-bottom: 35px;
+            box-shadow: 7px 7px 0px #000000; 
+            position: relative;
+        }
+
+        h2 {
+            display: inline-block;
+            margin-top: 0;
+            color: #000000;
+            font-size: 1.3rem;
+            background: linear-gradient(180deg, #baff99 0%, #76ec3b 100%); 
+            padding: 8px 22px;
+            border: 3px solid #000000;
+            border-radius: 40px;
+            box-shadow: 3px 3px 0px #000000;
+            margin-bottom: 15px;
+        }
+
+        .bloque-semestre {
+            display: block;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        h3 {
+            color: #000000; 
+            font-size: 1.1rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: linear-gradient(180deg, #ebd4ff 0%, #c195ff 100%);
+            display: inline-block;
+            padding: 6px 16px;
+            border: 2px solid #000000; 
+            border-radius: 12px;
+            box-shadow: 2px 2px 0px #000000; 
+        }
+
+        .boton-malla, .boton-azul-pop {
+            display: inline-block;
+            background: #C7D8FF; 
+            color: #1840B8 !important; 
+            font-family: 'Fredoka', sans-serif;
+            text-decoration: none;
+            border: 3px solid #000000; 
+            font-weight: bold;
+            box-shadow: 4px 4px 0px #000000; 
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .boton-malla:hover, .boton-azul-pop:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #000000;
+            text-decoration: none !important;
+        }
+
+        .boton-malla {
+            margin-top: 10px;
+            padding: 10px 25px;
+            border-radius: 50px;
+        }
+
+        .boton-azul-pop {
+            margin-top: 20px;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        ul { padding-left: 20px; margin-top: 10px; margin-bottom: 0; }
+        li { margin-bottom: 12px; font-size: 1.05rem; line-height: 1.5; }
+        a { color: #1d74db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .bloque-titulo-principal {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo_ucsp.png" alt="Logo UCSP" class="logo-universidad-esquina">
+
+    <div class="contenedor-principal">
+        <nav class="menu-navegacion">
+            <a href="#sobre-mi">Sobre mí</a> | 
+            <a href="#cursos">Mis Cursos</a> | 
+            <a href="#profesor">Profesor</a> |
+            <a href="#compañeros">Compañeros</a> | 
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <hr>
+
+        <div class="bloque-titulo-principal">
+            <h1>
+                <span>Flor Ayelen</span>
+                <span>Michcapacchua Huarca</span>
+            </h1>
+            <img src="tokki_limpio.png" alt="NewJeans Tokki" class="tokki-titulo">
+        </div>
+
+        <div class="tarjeta-seccion" id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy estudiante universitaria de segundo semestre de la carrera de Ciencias de la Computación de la Universidad Católica San Pablo. Me interesa desarrollar nuevas habilidades, enfrentar retos académicos y ampliar mis conocimientos mediante el aprendizaje continuo.</p>
+            
+            <div style="text-align: center;">
+                <a href="https://ucsp.edu.pe/" target="_blank" class="boton-azul-pop">
+                    Universidad Católica San Pablo
+                </a>
+            </div>
+        </div>
+
+        <div class="tarjeta-seccion" id="cursos">
+            <h2>Cursos</h2>
+            
+            <div class="bloque-semestre">
+                <h3>Cursos I Semestre</h3>
+                <ul>
+                    <li><strong>Matemática I</strong></li>
+                    <li><strong>Programación de Videojuegos</strong></li>
+                    <li><strong>Estructuras Discretas I</strong></li>
+                    <li><strong>Introducción a la Vida Universitaria</strong></li>
+                    <li><strong>Comunicación</strong></li>
+
+                </ul>
+            </div>
+            
+            <div class="bloque-semestre">
+                <h3>Cursos II Semestre</h3>
+                <ul>
+                    <li><strong>Cálculo I</strong></li>
+                    <li><strong>Programación Orientada a Objetos</strong></li>
+                    <li><strong>Introducción a Ciencia de la Computación</strong></li>
+                    <li><strong>Lógica</strong></li>
+                    <li><strong>Historia del Occidente</strong></li>
+                    <li><strong>Taller de Estructuras Discretas</strong></li>
+                </ul>
+            </div>
+
+            <center style="margin-top: 25px;">
+                <a href="https://ucsp.edu.pe/vive-san-pablo/universidad/transparencia/malla-curricular-programa-estudios-ciencia-computacion/" class="boton-malla" target="_blank">Ver Malla Curricular</a>
+            </center>
+        </div>
+
+        <div class="tarjeta-seccion" id="profesor">
+            <h2>Profesor de curso</h2>
+            <p style="margin-top: 15px; font-size: 1.1rem;">
+                <strong>Ernesto Cuadros Vargas</strong><br>
+                <a href="https://pe.linkedin.com/in/ecuadrosv" target="_blank">Visitar Perfil de LinkedIn</a>
+            </p>
+        </div>
+
+        <div class="tarjeta-seccion" id="compañeros">
+            <h2>Compañeros</h2>
+            <ul>
+                <li><a href="#" target="_blank">Página de Diandra </a></li>
+                <li><a href="#" target="_blank">Página de Emily </a></li>
+            </ul>
+        </div>
+
+        <div class="tarjeta-seccion" id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                <a href="mailto:flor.michcapacchua@ucsp.edu.pe" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Email" width="20" style="vertical-align: middle; margin-right: 5px;"> 
+                    flor.michcapacchua@ucsp.edu.pe
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/flor-michcapacchua-964341415/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="20" style="vertical-align: middle; margin-right: 5px;"> 
+                    Mi LinkedIn
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
